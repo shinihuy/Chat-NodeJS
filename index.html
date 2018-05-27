@@ -1,0 +1,20 @@
+<html>  
+    <head>
+        <title>Ứng dụng chat Realtime</title>
+        <meta charset=utf-8>
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="chat.js"></script> 
+    </head>
+    <body>
+        <ul id="messages"></ul>
+        <span id="notifyUser"></span>
+        <form id="form" action="" onsubmit="return submitfunction();">
+            <input type="hidden" id="user" value="">
+            <input id="m" autocomplete="off" onkeyup="notifyTyping();" 
+                placeholder="Nhập nội dung chat ở đây nha ....">
+            <input type="submit" id="button" value="Gửi đi.">
+        </form>
+    </body>
+</html>
