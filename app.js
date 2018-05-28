@@ -8,7 +8,7 @@ app.get('/',function(req, res){
     var express=require('express');
     app.use(express.static(path.join(__dirname)));
     res.send(path.join(__dirname,'../Chat-NodeJS','index.html'));
-    'res.sendFile(path.join(__dirname,'/','index.html'));
+    //res.sendFile(path.join(__dirname,'/','index.html'));
 });
 
 //đăng ký các sự kiện của Socket
@@ -22,7 +22,7 @@ io.on('connection',function(socket){
 });
 
 //Mở cổng lắng nghe của Socket là port 3000
-http.listen(3000,function(){
-    console.log('listening on port: 3000');
+http.listen(80,function(){
+    console.log('listening on port: 80');
 });
 
