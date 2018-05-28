@@ -7,7 +7,8 @@ var path=require('path');
 app.get('/',function(req, res){
     var express=require('express');
     app.use(express.static(path.join(__dirname)));
-    res.sendFile(path.join(__dirname,'/','index.html'));
+    res.send(path.join(__dirname,'../Chat-NodeJS','index.html'));
+    'res.sendFile(path.join(__dirname,'/','index.html'));
 });
 
 //đăng ký các sự kiện của Socket
