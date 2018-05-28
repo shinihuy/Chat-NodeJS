@@ -7,7 +7,8 @@ var path=require('path');
 app.get('/',function(req, res){
     var express=require('express');
     app.use(express.static(path.join(__dirname)));
-    res.send(path.join(__dirname,'../Chat-NodeJS','index.html'));
+    res.send('da truy cap thanh cong');
+    //res.send(path.join(__dirname,'../Chat-NodeJS','index.html'));
     //res.sendFile(path.join(__dirname,'/','index.html'));
 });
 
