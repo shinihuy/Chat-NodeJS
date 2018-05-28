@@ -24,5 +24,6 @@ io.on('connection',function(socket){
 //Mở cổng lắng nghe của Socket là port 3000
 http.listen(80,function(){
     console.log('listening on port: 80');
+    alert('hello my first app');
 });
 
